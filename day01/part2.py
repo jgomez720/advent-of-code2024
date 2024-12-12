@@ -18,7 +18,13 @@ total_sum = 0
 
 firstColumn.sort()
 secondColumn.sort()
+
+# print(firstColumn)
+# print(secondColumn)
+
 for i in range(len(firstColumn)):
-    total_sum += abs(firstColumn[i] - secondColumn[i])
+    currentCount = secondColumn.count(firstColumn[i])
+    # print(currentCount)
+    total_sum += firstColumn[i] * currentCount
     
 print(total_sum)
