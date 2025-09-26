@@ -1,0 +1,19 @@
+read in the txt file per line
+do not sort, keep as is
+
+run through each number in a line, save the difference in another array. So for example
+
+lines[0] = 50 52 55 54 57
+
+would produce this:
+
+differences[0] = 2, 3, -1, 3
+
+run rules on the array. 
+
+- must be increasing or decreasing only.
+- can only increase or decrease by a max of 3. 
+
+if these are true, add 1 to counter. 
+
+report the count. 
